@@ -18,7 +18,7 @@ export default function Dashboard() {
   }, [])
 
   const completed = tasks.filter((task) => task.status === 'Done').length
-  const inProgress = tasks.filter((task) => task.status === 'In Progress').length
+  const inProgress = tasks.filter((task) => task.status === 'In progress').length
   const completion = tasks.length ? Math.round((completed / tasks.length) * 100) : 0
 
   return (
