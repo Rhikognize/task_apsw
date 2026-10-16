@@ -14,7 +14,7 @@ export default function TaskForm({ initialValues, projects, onSubmit, submitLabe
 
   async function handleSubmit(event) {
     event.preventDefault()
-    if (form.title.length === 0) {
+    if (form.title.trim().length === 0) {
       setError('A task title is required.')
       return
     }
